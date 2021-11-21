@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Prediciton</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2>Please enter data</h2>
+    <form method="POST">
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ form.hidden_tag() }}
+        {{ form.f0.label }} {{ form.f0 }}
+        <br>
+        {{ form.f1.label }} {{ form.f1 }}
+        <br>
+        {{ form.f2.label }} {{ form.f2 }}
+        <br>
+        {{ form.f3.label }} {{ form.f3 }}
+        <br>
+        {{ form.f4.label }} {{ form.f4 }}
+        <br>
+        {{ form.f5.label }} {{ form.f5 }}
+        <br>
+        {{ form.f6.label }} {{ form.f6 }}
+        <br>
+        {{ form.f7.label }} {{ form.f7 }}
+        <br>
+        {{ form.f8.label }} {{ form.f8 }}
+        <br>
+        {{ form.f9.label }} {{ form.f9 }}
+        <br>
+        {{ form.f10.label }} {{ form.f10 }}
+        <br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
