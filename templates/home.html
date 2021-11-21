@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Prediciton</title>
+    <!-- Import css stylesheet like this for Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>My Prediction</title>
 </head>
 <body>
     <h1>Welcome</h1>
@@ -31,6 +33,16 @@
         {{ form.f9.label }} {{ form.f9 }}
         <br>
         {{ form.f10.label }} {{ form.f10 }}
+        <br>
+        {{ form.f11.label }} {{ form.f11 }}
+        <br>
+        {{ form.f12.label }} {{ form.f12 }}
+        <br>
+        {{ form.f13.label }} {{ form.f13 }}
+        <br>
+        {{ form.f14.label }} {{ form.f14 }}
+        <br>
+        {{ form.f15.label }} {{ form.f15 }}
         <br>
         {{ form.submit() }}
     </form>

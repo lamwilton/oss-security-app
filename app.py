@@ -25,6 +25,11 @@ def return_prediction(model, scaler, sample_json):
     data[8] = sample_json['f8']
     data[9] = sample_json['f9']
     data[10] = sample_json['f10']
+    data[11] = sample_json['f11']
+    data[12] = sample_json['f12']
+    data[13] = sample_json['f13']
+    data[14] = sample_json['f14']
+    data[15] = sample_json['f15']
 
     data = scaler.transform([data])
     result = model.predict(data)
@@ -71,6 +76,11 @@ class MyForm(FlaskForm):
     f8 = StringField(columns[8], default=0, validators=[DataRequired()])
     f9 = StringField(columns[9], default=0, validators=[DataRequired()])
     f10 = StringField(columns[10], default=0, validators=[DataRequired()])
+    f11 = StringField(columns[11], default=0, validators=[DataRequired()])
+    f12 = StringField(columns[12], default=0, validators=[DataRequired()])
+    f13 = StringField(columns[13], default=0, validators=[DataRequired()])
+    f14 = StringField(columns[14], default=0, validators=[DataRequired()])
+    f15 = StringField(columns[15], default=0, validators=[DataRequired()])
     submit = SubmitField('Analyze')
 
 
@@ -92,6 +102,11 @@ def index():
         session['f8'] = form.f8.data
         session['f9'] = form.f9.data
         session['f10'] = form.f10.data
+        session['f11'] = form.f11.data
+        session['f12'] = form.f12.data
+        session['f13'] = form.f13.data
+        session['f14'] = form.f14.data
+        session['f15'] = form.f15.data
 
         return redirect(url_for("prediction"))
     return render_template('home.html', form=form)
@@ -113,6 +128,11 @@ def prediction():
         content['f8'] = int(session['f8'])
         content['f9'] = int(session['f9'])
         content['f10'] = int(session['f10'])
+        content['f11'] = int(session['f11'])
+        content['f12'] = int(session['f12'])
+        content['f13'] = int(session['f13'])
+        content['f14'] = int(session['f14'])
+        content['f15'] = int(session['f15'])
     
         results = return_prediction(model=model, scaler=scaler, sample_json=content)
     except:
