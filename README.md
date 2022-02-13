@@ -7,3 +7,6 @@ Link to the paper: https://app.oatos.com/view/#/pdf?ft=sharedisk&fid=26207157275
 Password: 73Bh5t
 
 QRS 2021 conference: https://qrs21.techconf.org/
+
+## Build docker image
+Follow https://docs.docker.com/language/python/build-images/ and use base image python:3.8.8
