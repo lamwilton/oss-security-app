@@ -1,11 +1,12 @@
-# oss-security-app
+# Analyzing Software Security-related Size and its Relationship with Vulnerabilities in OSS
+Elaine Venson; Ting Fung Lam; Bradford Clark; Barry Boehm  
+Center for Systems and Software Engineering University of Southern California, Los Angeles, USA  
 
-Must use Python 3.8.8. Python 3.10 will not work!  
 Launch my app here: https://oss-security-app.herokuapp.com/
 
-QRS 2021 conference: https://qrs21.techconf.org/  
-Program: https://qrs21.techconf.org/download/QRS-2021-Program.pdf
+Paper: https://ieeexplore.ieee.org/document/9724837
 
+Must use Python 3.8.8. Python 3.10 will not work!  
 ## Come get the Docker image here
 
 https://hub.docker.com/repository/docker/lamwilton/oss-security-app
